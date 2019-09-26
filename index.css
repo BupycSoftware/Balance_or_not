@@ -1,0 +1,21 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+.wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    height: 100vh;
+}
+main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    widows: 100vw;
+}
+aside {
+    display: flex;
+    flex-flow: column nowrap;
+    width: fit-content;
+}
