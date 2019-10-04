@@ -11,36 +11,167 @@
 <body>
     <div class="wrapper">
         <header>
-            <h1>mobitva2.online</h1>
+            <a href="mobitva2.online" class="header_h1">mobitva2.online</a>
+            <p class="header_text">Балансируй, Властвуй, Унижай</p>
         </header>
         <main>
-            <aside>
-                <h2>Список доступных шмоток:</h2>
-                <p>Выбери стиль:</p>
-                <select name="style" id="style_type">
-                    <option value="1">Урон</option>
-                    <option value="2">Броня</option>
-                    <option value="3">Уворот</option>
-                    <option value="4">Элита</option>
-                </select>
-                <ul>
-                    <li>Пусто</li>
-                </ul>
-                <input type="button" value="Добавить новую шмотку">
-            </aside>
-            <aside>
-                <h2>Добавить в сравнение:</h2>
-                <div class="">
-                    
+            <div class="compare_div">
+                <p class="compare_h1">Список доступных наборов:</p>
+                <div class="inline">
+                    <span>Cтиль:</span>
+                    <select name="style" id="style_type_sets">
+                        <option value="1">Урон</option>
+                        <option value="2">Броня</option>
+                        <option value="3">Уворот</option>
+                        <option value="4">Элита</option>
+                    </select>
                 </div>
-            </aside>
-            <aside>
-                <h2>Что-то будет</h2>
-            </aside>
+                <div class="inline">
+                    <span>Уровень: </span>
+                    <input id="lvl_add_sets" type="number" value="1" min="0" max="99">
+                </div>
+                <ul id="list_of_sets"></ul>
+                <div class="inline">
+                    <input id="add_new_sets" type="button" value="Создать набор">
+                    <input id="compare_btn" type="button" value="Сравнить">
+                </div>
+            </div>
         </main>
         <footer>
-            <p>footer</p>
+            <p class="footer_h1">&copy; All right reserved</p>
+            <p class="footer_text">Виу Пыщ-Пыщ</p>
         </footer>
     </div>
+
+
+
+
+
+
+    <!--Создание НАБОРА-->
+    <div id="add_sets_page" class="add_sets_wrapper">
+        <div class="wrapper2">
+            <img id="close" src="img/close.png" alt="close_png">
+            <div class="wrapper_add_new_sets">
+                <p class="compare_h1">Создание набора</p>
+                <div class="inline">
+                    <span>Название: </span>
+                    <input type="text" id="text_sets" value="Test">
+                </div>
+                <div class="inline">
+                    <span>Стиль: </span>
+                    <select name="style_add" id="style_type_sets">
+                        <option value="1">Урон</option>
+                        <option value="2">Броня</option>
+                        <option value="3">Уворот</option>
+                        <option value="4">Элита</option>
+                    </select>
+                </div>
+                <div class="inline">
+                    <span>Уровень: </span>
+                    <input id="lvl_add_sets" type="number" value="1" min="0" max="99">
+                </div>
+                <p class="compare_h1">Доступные предметы</p>
+                <div>
+                    <ul id="list_of_items"></ul>
+                </div>
+                <p class="compare_h1">Доступные действия</p>
+                <div class="inline">
+                    <input id="add_new_items" type="button" value="Создать предмет">
+                    <input id="save_set_btn" type="button" value="Сохранить">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--Создание ПРЕДМЕТА-->
+    <div id="add_items_page" class="add_sets_wrapper">
+        <div class="wrapper2">
+            <img id="close2" src="img/close.png" alt="close_png">
+            <div class="wrapper_add_new_sets">
+                <p class="compare_h1">Создание предмета</p>
+                <div class="inline">
+                    <span>Название: </span>
+                    <input type="text" id="name_add_items" value="Test">
+                </div>
+                <div class="inline">
+                    <span>Слот: </span>
+                    <select name="type_add" id="items_type">
+                        <option value="1">Оружие</option>
+                        <option value="2">Щит</option>
+                        <option value="3">Шлем</option>
+                        <option value="4">Рукавички</option>
+                        <option value="5">Доспех</option>
+                        <option value="6">Ноги</option>
+                        <option value="7">Кольцо</option>
+                    </select>
+                </div>
+                <div class="inline">
+                    <span>Стиль: </span>
+                    <select name="style_items_add" id="style_type_items">
+                        <option value="1">Урон</option>
+                        <option value="2">Броня</option>
+                        <option value="3">Уворот</option>
+                        <option value="4">Элита</option>
+                    </select>
+                </div>
+                <div class="inline">
+                    <span>Уровень: </span>
+                    <input id="lvl_add_items" type="number" value="1" min="0" max="99">
+                </div>
+                <p class="compare_h1">Статы предмета</p>
+                <div class="inline">
+                    <span>Точность: </span>
+                    <input id="to4ka_add_items" type="number" value="1">
+                </div>
+                <div class="inline">
+                    <span>Урон: </span>
+                    <input id="damage_add_items" type="number" value="1">
+                </div>
+                <div class="inline">
+                    <span>Блок: </span>
+                    <input id="block_add_items" type="number" value="1">
+                </div>
+                <div class="inline">
+                    <span>Оглушение: </span>
+                    <input id="stan_add_items" type="number" value="1">
+                </div>
+                <div class="inline">
+                    <span>Уворот: </span>
+                    <input id="yrod_add_items" type="number" value="1">
+                </div>
+                <div class="inline">
+                    <span>Броня: </span>
+                    <input id="chubby_add_items" type="number" value="1">
+                </div>
+                <div class="inline">
+                    <span>Здоровье: </span>
+                    <input id="hp_add_items" type="number" value="1">
+                </div>
+                <p class="compare_h1">Доступные действия</p>
+                <div class="inline">
+                    <input id="create_items_btn" type="button" value="Сохранить">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!--Редактирование ПРЕДМЕТА-->
+
+
 </body>
 </html>
