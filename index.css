@@ -35,16 +35,25 @@ footer {
 }
 .wrapper2 {
     padding: 20px 25px;
-    position: absolute;
-    top: 10%;
-    left: 40%;
     background-color: white;
     border: 1px solid black;
     border-radius: 15px;
 }
-main {
+.add_position {
     display: flex;
     flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+}
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
     justify-content: center;
     widows: 100vw;
 }
@@ -69,6 +78,11 @@ main {
     justify-content: space-between;
     margin: 5px 0;
 }
+.inline_btn {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
 .add_sets_wrapper {
     display: none;
     position: absolute;
@@ -79,7 +93,8 @@ main {
     background-color: rgba(0, 0, 0, 0.6);
 }
 #close,
-#close2 {
+#close2,
+#close3 {
     position: relative;
     top: 5%;
     left: 95%;
@@ -114,6 +129,54 @@ ul li {
     padding: 10px 30px;
     color: white;
     animation: 3s opacity ease;
+}
+table {
+    border-radius: 10px;
+    border-spacing: 0;
+    text-align: center;
+    border-collapse: collapse;
+}
+th {
+    background: #BCEBDD;
+    color: white;
+    text-shadow: 0 1px 1px #2D2020;
+    padding: 10px 20px;
+}
+th, td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+}
+th:first-child, td:first-child {
+    text-align: left;
+}
+th:first-child {
+    border-top-left-radius: 10px;
+}
+th:last-child {
+    border-top-right-radius: 10px;
+    border-right: none;
+}
+td {
+    padding: 10px 20px;
+    background: #F8E391;
+}
+tr:last-child td:first-child {
+    border-radius: 0 0 0 10px;
+}
+tr:last-child td:last-child {
+    border-radius: 0 0 10px 0;
+}
+tr td:last-child {
+    border-right: none;
+}
+.button {
+    cursor: pointer;
+    background-color: #ff6700;
+    border: 2px solid #663300;
+    border-radius: 4px;
+    line-height: 30px;
+    font-weight: bold;
 }
 @keyframes opacity {
     0% {

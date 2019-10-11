@@ -31,9 +31,10 @@
                     <input id="lvl_add_sets" type="number" value="1" min="0" max="99">
                 </div>
                 <ul id="list_of_sets"></ul>
-                <div class="inline">
-                    <input id="add_new_sets" type="button" value="Создать набор">
-                    <input id="compare_btn" type="button" value="Сравнить">
+                <div class="inline_btn">
+                    <input id="add_new_sets" class="button" type="button" value="Создать набор">
+                    <input id="show_table_btn" class="button" type="button" value="Показать таблицу">
+                    <input id="add_compare_btn" class="button" type="button" value="Добавить в таблицу">
                 </div>
             </div>
         </main>
@@ -50,35 +51,37 @@
 
     <!--Создание НАБОРА-->
     <div id="add_sets_page" class="add_sets_wrapper">
-        <div class="wrapper2">
-            <img id="close" src="img/close.png" alt="close_png">
-            <div class="wrapper_add_new_sets">
-                <p class="compare_h1">Создание набора</p>
-                <div class="inline">
-                    <span>Название: </span>
-                    <input type="text" id="text_sets" value="Test">
-                </div>
-                <div class="inline">
-                    <span>Стиль: </span>
-                    <select name="style_add" id="style_type_sets">
-                        <option value="1">Урон</option>
-                        <option value="2">Броня</option>
-                        <option value="3">Уворот</option>
-                        <option value="4">Элита</option>
-                    </select>
-                </div>
-                <div class="inline">
-                    <span>Уровень: </span>
-                    <input id="lvl_add_sets" type="number" value="1" min="0" max="99">
-                </div>
-                <p class="compare_h1">Доступные предметы</p>
-                <div>
-                    <ul id="list_of_items"></ul>
-                </div>
-                <p class="compare_h1">Доступные действия</p>
-                <div class="inline">
-                    <input id="add_new_items" type="button" value="Создать предмет">
-                    <input id="save_set_btn" type="button" value="Сохранить">
+        <div class="add_position">
+            <div class="wrapper2">
+                <img id="close" src="img/close.png" alt="close_png">
+                <div class="wrapper_add_new_sets">
+                    <p class="compare_h1">Создание набора</p>
+                    <div class="inline">
+                        <span>Название: </span>
+                        <input type="text" id="text_sets" value="Test">
+                    </div>
+                    <div class="inline">
+                        <span>Стиль: </span>
+                        <select name="style_add" id="style_type_sets">
+                            <option value="1">Урон</option>
+                            <option value="2">Броня</option>
+                            <option value="3">Уворот</option>
+                            <option value="4">Элита</option>
+                        </select>
+                    </div>
+                    <div class="inline">
+                        <span>Уровень: </span>
+                        <input id="lvl_add_sets" type="number" value="1" min="0" max="99">
+                    </div>
+                    <p class="compare_h1">Доступные предметы</p>
+                    <div>
+                        <ul id="list_of_items"></ul>
+                    </div>
+                    <p class="compare_h1">Доступные действия</p>
+                    <div class="inline_btn">
+                        <input id="add_new_items" class="button" type="button" value="Создать предмет">
+                        <input id="save_set_btn" class="button" type="button" value="Сохранить">
+                    </div>
                 </div>
             </div>
         </div>
@@ -91,71 +94,73 @@
 
     <!--Создание ПРЕДМЕТА-->
     <div id="add_items_page" class="add_sets_wrapper">
-        <div class="wrapper2">
-            <img id="close2" src="img/close.png" alt="close_png">
-            <div class="wrapper_add_new_sets">
-                <p class="compare_h1">Создание предмета</p>
-                <div class="inline">
-                    <span>Название: </span>
-                    <input type="text" id="name_add_items" value="Test">
-                </div>
-                <div class="inline">
-                    <span>Слот: </span>
-                    <select name="type_add" id="items_type">
-                        <option value="1">Оружие</option>
-                        <option value="2">Щит</option>
-                        <option value="3">Шлем</option>
-                        <option value="4">Рукавички</option>
-                        <option value="5">Доспех</option>
-                        <option value="6">Ноги</option>
-                        <option value="7">Кольцо</option>
-                    </select>
-                </div>
-                <div class="inline">
-                    <span>Стиль: </span>
-                    <select name="style_items_add" id="style_type_items">
-                        <option value="1">Урон</option>
-                        <option value="2">Броня</option>
-                        <option value="3">Уворот</option>
-                        <option value="4">Элита</option>
-                    </select>
-                </div>
-                <div class="inline">
-                    <span>Уровень: </span>
-                    <input id="lvl_add_items" type="number" value="1" min="0" max="99">
-                </div>
-                <p class="compare_h1">Статы предмета</p>
-                <div class="inline">
-                    <span>Точность: </span>
-                    <input id="to4ka_add_items" type="number" value="1">
-                </div>
-                <div class="inline">
-                    <span>Урон: </span>
-                    <input id="damage_add_items" type="number" value="1">
-                </div>
-                <div class="inline">
-                    <span>Блок: </span>
-                    <input id="block_add_items" type="number" value="1">
-                </div>
-                <div class="inline">
-                    <span>Оглушение: </span>
-                    <input id="stan_add_items" type="number" value="1">
-                </div>
-                <div class="inline">
-                    <span>Уворот: </span>
-                    <input id="yrod_add_items" type="number" value="1">
-                </div>
-                <div class="inline">
-                    <span>Броня: </span>
-                    <input id="chubby_add_items" type="number" value="1">
-                </div>
-                <div class="inline">
-                    <span>Здоровье: </span>
-                    <input id="hp_add_items" type="number" value="1">
-                </div>
-                <p class="compare_h1">Доступные действия</p>
-                <div class="inline">
-                    <input id="create_items_btn" type="button" value="Сохранить">
+        <div class="add_position">
+            <div class="wrapper2">
+                <img id="close2" src="img/close.png" alt="close_png">
+                <div class="wrapper_add_new_sets">
+                    <p class="compare_h1">Создание предмета</p>
+                    <div class="inline">
+                        <span>Название: </span>
+                        <input type="text" id="name_add_items" value="Test">
+                    </div>
+                    <div class="inline">
+                        <span>Слот: </span>
+                        <select name="type_add" id="items_type">
+                            <option value="1">Оружие</option>
+                            <option value="2">Щит</option>
+                            <option value="3">Шлем</option>
+                            <option value="4">Рукавички</option>
+                            <option value="5">Доспех</option>
+                            <option value="6">Ноги</option>
+                            <option value="7">Кольцо</option>
+                        </select>
+                    </div>
+                    <div class="inline">
+                        <span>Стиль: </span>
+                        <select name="style_items_add" id="style_type_items">
+                            <option value="1">Урон</option>
+                            <option value="2">Броня</option>
+                            <option value="3">Уворот</option>
+                            <option value="4">Элита</option>
+                        </select>
+                    </div>
+                    <div class="inline">
+                        <span>Уровень: </span>
+                        <input id="lvl_add_items" type="number" value="1" min="0" max="99">
+                    </div>
+                    <p class="compare_h1">Статы предмета</p>
+                    <div class="inline">
+                        <span>Точность: </span>
+                        <input id="to4ka_add_items" type="number" value="0">
+                    </div>
+                    <div class="inline">
+                        <span>Урон: </span>
+                        <input id="damage_add_items" type="number" value="0">
+                    </div>
+                    <div class="inline">
+                        <span>Блок: </span>
+                        <input id="block_add_items" type="number" value="0">
+                    </div>
+                    <div class="inline">
+                        <span>Оглушение: </span>
+                        <input id="stan_add_items" type="number" value="0">
+                    </div>
+                    <div class="inline">
+                        <span>Уворот: </span>
+                        <input id="yrod_add_items" type="number" value="0">
+                    </div>
+                    <div class="inline">
+                        <span>Броня: </span>
+                        <input id="chubby_add_items" type="number" value="0">
+                    </div>
+                    <div class="inline">
+                        <span>Здоровье: </span>
+                        <input id="hp_add_items" type="number" value="0">
+                    </div>
+                    <p class="compare_h1">Доступные действия</p>
+                    <div class="inline_btn">
+                        <input id="create_items_btn" class="button" type="button" value="Сохранить">
+                    </div>
                 </div>
             </div>
         </div>
@@ -165,10 +170,34 @@
 
 
 
-
-
-
-
+    <!--Сравнение выбраных СЭТОВ-->
+    <div id="compare_wrapper" class="add_sets_wrapper">
+        <div class="add_position">
+            <div class="wrapper2">
+                <img id="close3" src="img/close.png" alt="close_png">
+                <p class="compare_h1">Сравнение выбранных наборов</p>
+                <table>
+                    <tbody id="compare_table">
+                        <tr>
+                            <th>Название</th>
+                            <th>Уровень</th>
+                            <th>Точность</th>
+                            <th>Урон</th>
+                            <th>Блок</th>
+                            <th>Оглушение</th>
+                            <th>Уворот</th>
+                            <th>Броня</th>
+                            <th>Здоровье</th>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="compare_h1">Доступные действия</p>
+                <div class="inline_btn">
+                    <input id="reset_compare" class="button" type="button" value="Очистить таблицу">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--Редактирование ПРЕДМЕТА-->
 
